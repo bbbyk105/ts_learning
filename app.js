@@ -1,14 +1,20 @@
-function add(n1, n2, showResult, Phrase) {
-    var result = n1 + n2;
-    if (showResult) {
-        console.log(Phrase + result);
-    }
-    else {
-        return n1 + n2;
-    }
+// const person: {
+//     name: string,
+//     age: number,
+// } 
+var person = {
+    name: 'yota',
+    age: 30,
+    hobbies: ['Sports', 'Cooking'],
+    role: [2, 'author'],
+};
+// person.role.push('admin');
+// person.role[1] = 10;
+// person.role = [0, 'admin', 'user'];
+var favoriteActivities;
+favoriteActivities = ['Sports'];
+console.log(person.name);
+for (var _i = 0, _a = person.hobbies; _i < _a.length; _i++) {
+    var hobby = _a[_i];
+    console.log(hobby.toUpperCase());
 }
-var number1 = 5;
-var number2 = 2.8;
-var printResult = true;
-var resultPhrase = 'Result';
-add(number1, number2, printResult, resultPhrase);
