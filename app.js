@@ -4,10 +4,11 @@ function combine(input1, input2) {
         result = input1 + input2;
     }
     else {
-        return result;
+        result = input1.toString() + input2.toString();
     }
+    return result;
 }
 var combinedAges = combine(30, 26);
 console.log(combinedAges);
-var combinedNames = ('Max', 'Anna');
+var combinedNames = combine('Max', 'Anna');
 console.log(combinedNames);
