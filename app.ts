@@ -1,5 +1,18 @@
-const button = document.querySelector("button")!;
+class Department {
+  name: string;
 
-button?.addEventListener ('click', () => {
-    alert("clicked")
-})
+  constructor(n: string) {
+    this.name = n;
+  }
+
+  describe(){
+    console.log('Department:' + this.name);
+  }
+}
+
+const accounting = new Department('Accounting');
+
+
+console.log(accounting);
+
+accounting.describe();
