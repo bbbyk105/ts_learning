@@ -1,5 +1,26 @@
 "use strict";
-const button = document.querySelector("button");
-button === null || button === void 0 ? void 0 : button.addEventListener('click', () => {
-    alert("clicked");
-});
+class Department {
+    constructor(n) {
+        this.employees = [];
+        this.name = n;
+    }
+    describe() {
+        console.log('Department:' + this.name);
+    }
+    addEmployee(employee) {
+        this.employees.push(employee);
+    }
+    printEmployeeInformation() {
+        console.log(this.employees.length);
+        console.log(this.employees);
+    }
+}
+const accounting = new Department('Accounting');
+accounting.addEmployee('Max');
+accounting.addEmployee('Manu');
+// accounting.employees[2] = 'Anna';
+accounting.name = 'NEW NAME';
+accounting.describe();
+accounting.printEmployeeInformation();
+// const accountingCopy = {name: 'DUMMY' ,describe: accounting.describe};
+// accountingCopy.describe();
